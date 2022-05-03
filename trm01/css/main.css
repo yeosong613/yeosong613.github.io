@@ -59,13 +59,16 @@
     font-size: 60px;
     font-weight: 900;
     margin: 0 0 30px 0;
-    color: #00f;
+    text-shadow: 1px 0 3px rgb(255 255 255 / 25%);
+    background: linear-gradient(to right top, #0a96ba, #032777, #333333);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 
 .main_slider strong {
     display: block;
     margin: 0 0 20px 0;
-    color: #000;
+    color: rgb(172, 110, 30);
 }
 
 .main_slider .slick-dots {
@@ -92,6 +95,11 @@
     transform: translateY(-50%);
 }
 
+.main_banner .container {
+    height: 220px;
+    align-items: flex-end;
+}
+
 .main_banner figure {
     display: flex;
     flex: 1;
@@ -100,6 +108,11 @@
     justify-content: center;
     align-items: center;
     height: 200px;
+    transition: 0.3s;
+}
+
+.main_banner figure:hover {
+    height: 220px;
 }
 
 .main_banner figure:nth-child(1) {
@@ -153,7 +166,8 @@
     flex: 2;
     text-align: right;
     background: #dddddd;
-    padding: 50px 30px 0 0;
+    padding: 20px 20px 55px 0px;
+    border: 20px solid transparent;
 
 }
 
@@ -167,13 +181,14 @@
 
 .main_banner .customer i {
     position: absolute;
-    top: -29px;
+    top: -50px;
     right: 30px;
     color: #fff;
     background: #e7948f;
     font-size: 38px;
     padding: 10px;
     border-radius: 50%;
+
 }
 
 .main_link {
@@ -228,8 +243,12 @@
 }
 
 .main_link h3 {
-    font-size: 23px;
+    font-size: 20px;
     margin: 0 0 30px 0;
+}
+
+.main_link p {
+    font-size: 13px;
 }
 
 .main_link h3::after {
@@ -243,7 +262,7 @@
 
 .main_link figure a {
     position: absolute;
-    top: 50%;
+    top: 56%;
     right: 30px;
     width: 60px;
     height: 60px;
