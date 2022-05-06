@@ -212,12 +212,12 @@
         });
 
         $('.totop').on('click', function () {
-            $('html, body').animate({ scrolltop: 0 }, 1000)
+            $('html, body').animate({ scrollTop: 0 }, 1000)
         });
 
         $(window).on('scroll', function () {
             let sct = $(window).scrollTop();
-            sct > 300 ? $('.totop').fadeIn() : $('.totop').fadeOut()
+            sct > 300 ? $('.totop').fadeIn() : $('.totop').fadeOut();
         })
 
     </script>
